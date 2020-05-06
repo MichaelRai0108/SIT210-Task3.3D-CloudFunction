@@ -1,0 +1,17 @@
+////CODE FOR PUBLISHER
+
+int led = A5;
+int boardLed = D7;
+
+void setup() {
+    
+    pinMode(led,OUTPUT); 
+    pinMode(boardLed,OUTPUT);
+}
+
+
+void loop() 
+{
+    Particle.publish("Michael_Kapoora_event","wave");
+    delay(17000);
+}
